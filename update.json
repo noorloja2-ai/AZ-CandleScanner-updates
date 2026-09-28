@@ -1,0 +1,9 @@
+{
+  "version": "16.52",
+  "apkUrl": "https://github.com/noorloja2-ai/AZ-CandleScanner-updates/releases/download/v16.52/CandleScanner_v16.52.apk",
+  "apkName": "CandleScanner_v16.52.apk",
+  "apkSha256": "e0e1de61511e326841287aeb0b37fbfab1655b0f72c10a4c18a7eadbd91f8d12",
+  "notes": "Clearer signal history and small-sample labels. Preserves local learning.",
+  "build": 120,
+  "publishedAt": "2026-09-28T23:10:00Z"
+}
