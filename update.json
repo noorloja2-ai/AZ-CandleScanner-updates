@@ -1,9 +1,9 @@
 {
-  "version": "16.53",
-  "apkUrl": "https://github.com/noorloja2-ai/AZ-CandleScanner-updates/releases/download/v16.53/CandleScanner_v16.53.apk",
-  "apkName": "CandleScanner_v16.53.apk",
-  "apkSha256": "067d96814e362da3c0e28bf4d1809070c3fe4f7726aebd87424de4be1cf0436d",
-  "notes": "Fixes the in-app update check using a public APK-only feed. Preserves local learning and scanning.",
-  "build": 121,
-  "publishedAt": "2026-09-28T23:17:00Z"
+  "version": "16.54",
+  "apkUrl": "https://github.com/noorloja2-ai/AZ-CandleScanner-updates/releases/download/v16.54/CandleScanner_v16.54.apk",
+  "apkName": "CandleScanner_v16.54.apk",
+  "apkSha256": "846b1f501d400f2a63388e89027905b56dc6f808a6c50d7d72b0bee156b6516f",
+  "notes": "Restores v16.38 scanner rules and learning score calibration while retaining local data and license renewal.",
+  "build": 122,
+  "publishedAt": "2026-09-29T00:40:00Z"
 }
