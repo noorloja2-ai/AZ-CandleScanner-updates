@@ -1,9 +1,9 @@
 {
-  "version": "16.54",
-  "apkUrl": "https://github.com/noorloja2-ai/AZ-CandleScanner-updates/releases/download/v16.54/CandleScanner_v16.54.apk",
-  "apkName": "CandleScanner_v16.54.apk",
-  "apkSha256": "846b1f501d400f2a63388e89027905b56dc6f808a6c50d7d72b0bee156b6516f",
-  "notes": "Restores v16.38 scanner rules and learning score calibration while retaining local data and license renewal.",
-  "build": 122,
-  "publishedAt": "2026-09-29T00:40:00Z"
+  "version": "16.58",
+  "apkUrl": "https://github.com/noorloja2-ai/AZ-CandleScanner-updates/releases/download/v16.58/CandleScanner_v16.58.apk",
+  "apkName": "CandleScanner_v16.58.apk",
+  "apkSha256": "3ee1502aa55085d3d79e0fc455eeff3e98d752073a2ea6750bb17d7f10c374ba",
+  "notes": "Publishes v16.58 with named Pattern Performance results and Automatic Training collector status. Shadow Testing remains record-only; verified-pair gates and local learning data are preserved.",
+  "build": 126,
+  "publishedAt": "2026-09-29T12:17:58Z"
 }
