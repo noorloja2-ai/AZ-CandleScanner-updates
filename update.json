@@ -1,9 +1,9 @@
 {
-  "version": "16.58",
-  "apkUrl": "https://github.com/noorloja2-ai/AZ-CandleScanner-updates/releases/download/v16.58/CandleScanner_v16.58.apk",
-  "apkName": "CandleScanner_v16.58.apk",
-  "apkSha256": "3ee1502aa55085d3d79e0fc455eeff3e98d752073a2ea6750bb17d7f10c374ba",
-  "notes": "Publishes v16.58 with named Pattern Performance results and Automatic Training collector status. Shadow Testing remains record-only; verified-pair gates and local learning data are preserved.",
-  "build": 126,
-  "publishedAt": "2026-09-29T12:17:58Z"
+  "version": "16.60",
+  "apkUrl": "https://raw.githubusercontent.com/noorloja2-ai/AZ-CandleScanner-updates/main/CandleScanner_v16.60.apk",
+  "apkName": "CandleScanner_v16.60.apk",
+  "apkSha256": "b41db0c12c87a0ffb39c719fec28e9dd13c2e85950c1e14f0c464b1844f2e1ac",
+  "notes": "Adds deduplicated historical signal CSV import to this phone; imported records remain local and duplicates are skipped. Includes Focus Collection guidance.",
+  "build": 128,
+  "publishedAt": "2026-09-30T22:08:11Z"
 }
