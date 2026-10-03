@@ -1,9 +1,9 @@
 {
-  "version": "16.63",
-  "apkUrl": "https://raw.githubusercontent.com/noorloja2-ai/AZ-CandleScanner-updates/main/CandleScanner_v16.63.apk",
-  "apkName": "CandleScanner_v16.63.apk",
-  "apkSha256": "409a040820c3c7a2979017ebc81d69c8e11c5df60e6c611aa29cab8038127a0e",
-  "notes": "Adds a read-only all-pairs performance report grouped by pattern, asset and timeframe. Preserves existing learning data and signal rules.",
-  "build": 131,
-  "publishedAt": "2026-10-03T14:50:21Z"
+  "version": "16.64",
+  "apkUrl": "https://raw.githubusercontent.com/noorloja2-ai/AZ-CandleScanner-updates/main/CandleScanner_v16.64.apk",
+  "apkName": "CandleScanner_v16.64.apk",
+  "apkSha256": "84137c49c85fa8ddf8f6d66d534926f6231f2e389d5a393b5ae4ed5beb36bf8f",
+  "notes": "Fixes Monthly and Yearly Score so Pattern Mode resolved results are included, with duplicate protection. Preserves existing learning and training data.",
+  "build": 132,
+  "publishedAt": "2026-10-03T16:09:55Z"
 }
