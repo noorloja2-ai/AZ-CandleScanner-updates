@@ -1,0 +1,42 @@
+name: Publish AZ CandleScanner v16.64
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - .github/workflows/publish-v16.64.yml
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified signed build
+        run: |
+          curl -L --fail 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-b5a8-8210-bfe0-24859dd10482/raw?se=2026-10-03T16%3A12%3A58Z&sp=r&sv=2026-02-06&sr=b&scid=348140fc-e97e-5b9f-8f3a-3585e504c3fa&skoid=8981e47a-681f-4a6a-b86c-73d6347614b7&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-03T07%3A13%3A54Z&ske=2026-10-04T07%3A13%3A54Z&sks=b&skv=2026-02-06&sig=9hUNkgI%2BMU5X/gNJM1W1%2BVcv8oIk33PummNj0Tk/IxM%3D' -o /tmp/az-build.zip
+          mkdir -p /tmp/az-build
+          unzip -o /tmp/az-build.zip -d /tmp/az-build
+          echo '84137c49c85fa8ddf8f6d66d534926f6231f2e389d5a393b5ae4ed5beb36bf8f  /tmp/az-build/CandleScanner_v16.64.apk' | sha256sum -c -
+          cp /tmp/az-build/CandleScanner_v16.64.apk CandleScanner_v16.64.apk
+      - name: Publish manifest
+        run: |
+          PUBLISHED="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          cat > update.json <<EOF
+          {
+            "version": "16.64",
+            "apkUrl": "https://raw.githubusercontent.com/noorloja2-ai/AZ-CandleScanner-updates/main/CandleScanner_v16.64.apk",
+            "apkName": "CandleScanner_v16.64.apk",
+            "apkSha256": "84137c49c85fa8ddf8f6d66d534926f6231f2e389d5a393b5ae4ed5beb36bf8f",
+            "notes": "Fixes Monthly and Yearly Score so Pattern Mode resolved results are included, with duplicate protection. Preserves existing learning and training data.",
+            "build": 132,
+            "publishedAt": "$PUBLISHED"
+          }
+          EOF
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add CandleScanner_v16.64.apk update.json
+          git commit -m 'Publish signed CandleScanner v16.64 update'
+          git push origin HEAD:main
